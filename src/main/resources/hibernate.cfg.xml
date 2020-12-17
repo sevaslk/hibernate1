@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost/myhiberbase?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">ssss</property>
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">validate</property>
+
+        <mapping class="com.myhibernate.model.Skill"/>
+        <mapping class="com.myhibernate.model.Developer"/>
+        <mapping class="com.myhibernate.model.Account"/>
+
+    </session-factory>
+</hibernate-configuration>
