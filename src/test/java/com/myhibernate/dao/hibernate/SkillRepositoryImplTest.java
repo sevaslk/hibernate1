@@ -19,7 +19,7 @@ class SkillRepositoryImplTest {
             Developer testDeveloper = new Developer();
             testDeveloper.setName("Pal");
             when(developerGenericRepository.read(2L)).thenReturn(testDeveloper);
-            assertEquals("Pl", testDeveloper.getName());
+            assertEquals("Pal", testDeveloper.getName());
     }
 
 }
